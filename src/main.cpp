@@ -1,14 +1,32 @@
 #include <iostream>
 #include <Porcentaje.hpp>
+#include <list>
+using namespace std;
 
-int main(){
-        Porcentaje porcentaje;
+int main (){
+    std::list<Porcentaje> focos;
 
-        p.Incrementar(10);
-        p.Incrementar(10);
-        p.Disminuir(4);
+    Porcentaje foco1;
+    Porcentaje foco2;
+    Porcentaje foco3;
 
-        std::cout<<"Foco 1"<<foco1.Imprimir()<<std::endl;
+    focos.emplace_back(foco1);
+    focos.emplace_back(foco2);
+    focos.emplace_back(foco3);
 
-    return 0;
+    for (auto &&f : focos)
+    {
+        f.Incrementar(10);
+    }
+    
+
+    foco1.Incrementar(10);
+    foco1.Incrementar(10);
+    foco1.Disminuir(4);
+
+    std::cout
+    <<"Foco 1: "
+    <<foco1.Imprimir()
+    <<std::endl;
+    
 }
