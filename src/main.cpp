@@ -8,11 +8,11 @@ int main(int argc, char const *argv[])
     s1.Encender();
     s1.Imprimir();
 
-    s2.Imprimir();
     s2.Encender();
+    s2.Imprimir();
 
-    s3.Imprimir();
     s3.Encender();
+    s3.Imprimir();
 
     return 0;
 }

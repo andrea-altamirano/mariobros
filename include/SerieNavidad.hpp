@@ -30,6 +30,7 @@ public:
 
     void Imprimir()
     {
+        system("color AF1");
         for (auto &&focoActual : focos)
         {
             std::cout << focoActual.Imprimir() << "-";
