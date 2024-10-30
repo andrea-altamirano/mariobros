@@ -14,5 +14,6 @@ int main(int argc, char const *argv[])
     s3.Encender();
     s3.Imprimir();
 
+
     return 0;
 }
